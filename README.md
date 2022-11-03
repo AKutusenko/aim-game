@@ -1,2 +1,2 @@
-# aim-game
-aim-game
+# aim-training-game
+aim-training-game

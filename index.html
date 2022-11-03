@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Aim-training</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Aim Training</h1>
+      <input
+        type="text"
+        maxlength="28"
+        placeholder="Your nickname"
+        id="nickname"
+      />
+      <h4>Best score : <span id="best-score" class="primary"></span></h4>
+      <h4>Winner : <span id="winner" class="primary"></span></h4>
+      <a class="start">Start game</a>
+    </div>
+    <div class="screen">
+      <h1>Choose a time</h1>
+      <ul class="time-list">
+        <li>
+          <button class="time-btn" data-time="10">10 sec</button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="20">20 sec</button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="30">30 sec</button>
+        </li>
+      </ul>
+    </div>
+    <div class="screen">
+      <h3>Time left <span id="time" class="primary">00:00</span></h3>
+      <div class="board" id="board"></div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

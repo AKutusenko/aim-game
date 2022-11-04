@@ -73,10 +73,6 @@ function getRandomNum(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
 function finishGame() {
-  console.log("score", score);
-  console.log("bestScore", bestScore);
-  console.log("nick", nickname);
-  console.log("bestNick", bestNick);
   refs.timeBoard.parentNode.classList.add("hide");
   refs.circlesBoard.innerHTML = `<h1>${
     score > bestScore ? "New best score" : "Your score"
